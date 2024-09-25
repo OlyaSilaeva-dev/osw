@@ -1,0 +1,56 @@
+ADD_POOL pooll
+ADD_POOL pool
+
+ADD_SCHEME pooll scheme
+ADD_SCHEME pooll schemef
+
+ADD_SCHEME pool scheme
+ADD_SCHEME pool schemef
+ADD_SCHEME pool schemeqfj
+
+ADD_COLLECTION pooll scheme collection
+ADD_COLLECTION pooll scheme collectiondd
+ADD_COLLECTION pooll scheme coll
+
+ADD_COLLECTION pooll schemef collecn
+ADD_COLLECTION pooll schemef collectionddvajb
+ADD_COLLECTION pooll schemef collavj
+
+ADD_COLLECTION pool scheme colleddvjvafieho
+ADD_COLLECTION pool scheme collvajk
+ADD_COLLECTION pool scheme collectionvjaeiojqfej
+
+ADD_COLLECTION pool schemef col
+ADD_COLLECTION pool schemef collvajk
+ADD_COLLECTION pool schemef collectionvjaei
+
+ADD_COLLECTION pool schemeqfj colvdjs
+ADD_COLLECTION pool schemeqfj collvavdbaiueghoqjk
+ADD_COLLECTION pool schemeqfj collaei
+
+ADD_DATA pool scheme collvajk 1 masha 1
+ADD_DATA pool scheme collvajk 2 sasha 2
+ADD_DATA pool scheme collvajk 3 dasha 4
+
+ADD_DATA pool scheme colleddvjvafieho 1 dima 3
+ADD_DATA pool scheme colleddvjvafieho 2 ksuha 7
+
+ADD_DATA pool schemeqfj colvdjs 1 pomogite 3
+ADD_DATA pool schemeqfj collaei 2 ya 5
+ADD_DATA pool schemeqfj collaei 3 bolshe 1
+
+ADD_DATA pooll scheme collection 1 ne 4
+ADD_DATA pooll scheme collection 2 mogu 1
+ADD_DATA pooll scheme coll 3 dasha 1
+
+READ_DATA pool schemeqfj collaei bolshe
+READ_DATA pooll scheme collection mogu
+READ_DATA pool scheme colleddvjvafieho dima
+
+DELETE_DATA pool schemeqfj collaei bolshe
+UPDATE pool scheme colleddvjvafieho dima denis 2
+READ_DATA pool scheme colleddvjvafieho denis
+
+DELETE_SCHEME pool schemef
+
+DELETE_COLLECTION pool scheme collvajk
