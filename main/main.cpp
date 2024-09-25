@@ -30,7 +30,8 @@ int main(int argc, char * argv[])//<command file or --dialog> <mode> <index>
         index.assign(argv[3]);
         if (!index.compare("--name")) type = key_type::NAME;
         else if (!index.compare("--debts")) type = key_type::DEBTS;
-        else if (index.compare("--id"))
+        else if (!index.compare("--id")) type = key_type::ID;
+        else
         {
             std::cerr << "error";
             return -1;
