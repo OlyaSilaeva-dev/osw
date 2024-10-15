@@ -115,7 +115,7 @@ namespace program {
                     std::uint64_t update_value_time = 0,
                     std::uint64_t read_between_value_time = 0,
                     allocator *allocator = nullptr,
-                    allocator_type type = allocator_type::Global_Heap,
+                    allocator_type type = allocator_type::Boundary_Tags,
                     logger *logger = nullptr) :
                     _database(t, the_key_type, comparison::stdstring_comparer(), comparison::stdstring_comparer(), mode,
                               allocator, type, logger),
@@ -233,7 +233,8 @@ namespace program {
                     std::int64_t current_time = std::chrono::duration_cast<std::chrono::milliseconds>(
                             std::chrono::system_clock::now().time_since_epoch()).count();
 
-                    while (!_chain.handle(command_string, current_time)) {
+                    if (!_chain.handle(command_string, current_time)) {
+                        std::cout << "Wrong request!!!" << std::endl;
                         current_time = std::chrono::duration_cast<std::chrono::milliseconds>(
                                 std::chrono::system_clock::now().time_since_epoch()).count();
                     }

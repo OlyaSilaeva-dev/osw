@@ -52,7 +52,9 @@ namespace chain_of_responsibility {
             if (current_time < _target_action->get_time_and_date()) return false;
 
             if (!_target_action->can_execute(request)) {
-                if (!this->_next_handler) return false;
+                if (!this->_next_handler) {
+                    return false;
+                }
                 return this->_next_handler->handle(request, current_time);
             }
 
